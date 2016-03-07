@@ -20,9 +20,23 @@
     height: 30px; 
 }
 /*why-me*/
+
 .why-me-item{
     height: 150px;
+    text-align: center;
 }
+.why-me-item:hover{
+    opacity:1;
+}
+.whyme-head{
+    font-weight:550;
+    padding-top:15px;
+    margin-top:5px;
+}
+.why-me-para{
+    font-size: 13px;
+}
+
 .new-color{
     background: #A6A2AE;
     opacity:0.8;
@@ -30,9 +44,6 @@
 .new-color-2{
     background: #b95c5c;
     opacity:0.8;
-}
-.why-me-item:hover{
-    opacity:1;
 }
 /*thank-you-section*/
 .thanks{

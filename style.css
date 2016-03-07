@@ -9,13 +9,17 @@
 .navbar {
     margin-bottom: -20px;
 }
+/*mn-backgrounds*/
 #education, #skill-set, #form-section, #body-section{
-    background: #dad2e8; /*624497  a6a2ae*/
+    background: #dad2e8;
+}
+#footer, #top-nav-sect{
+    background: #6F706A;
 }
 #skills-section{
-    height: 30px;
+    height: 30px; 
 }
-
+/*why-me*/
 .why-me-item{
     height: 150px;
 }
@@ -36,24 +40,18 @@
 }
 .thanks h1{
     margin-top: 10px;
+    font-family: 'Slabo 27px', serif;
 }
 .horizontal-line{
     margin-top: 10px;
     margin-bottom: 10px;
 }
 #danke-cont{
-    background: #96988d;
+    background: #F09819; 
+    background: -webkit-linear-gradient(to left, #F09819 , #EDDE5D);
+    background: linear-gradient(to left, #F09819 , #EDDE5D); 
 }
-#danke-cont:hover{
-background: #F09819; /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #F09819 , #EDDE5D);
-background: linear-gradient(to left, #F09819 , #EDDE5D); 
-transition: all 0.5s ease 0s;
-}
-#footer, #top-nav-sect{
-    background: #6F706A;
-}
-/*------------------*/
+/*top-nav-collap*/
 @media (min-width: 768px){
     .navbar-nav{
         float:none;
@@ -106,12 +104,19 @@ ul .active{
     }
 }
 /*bottom-navigation-section*/
+
 #ul-nav-bot{
     background: #5F605B;
 }
 #ul-nav-bot li a{
     color: #DBD9D9;
     padding-top: 18px;
+}
+#ul-nav-bot li a:link{
+    background: #5F605B;    
+}
+#ul-nav-bot li a:visited{
+    background: #5F605B;    
 }
 #ul-nav-bot li a.bot-item-1:hover{
     background: #3D5998;
@@ -134,7 +139,7 @@ ul .active{
     opacity: 0.8;
 }
 
-}
+
 .footer-info p{
     color: #DBD9D9;
 }
@@ -151,6 +156,11 @@ ul .active{
     }
     #ul-nav-bot li{
         display: inline-block;
+        width: 24.3%;
+        text-align: center;
+    }
+    #ul-nav-bot li:first-child{
+        padding-right: -1%;
     }
      #ul-nav-bot li a{
         padding-top: 14px;
@@ -162,6 +172,20 @@ ul .active{
     padding-top: 5px;
     text-align: center;
     }
+    .text-item p{
+    margin-bottom: 3px;   
+    }
+}
+/*bottom-nav-quer*/
+@media (max-width: 473px){
+    #ul-nav-bot li{
+        width: 24%;
+    }    
+}
+@media (max-width: 345px){
+    #ul-nav-bot li{
+        width: 23.6%;
+    }    
 }
 /*form-section*/
 .page-header{
@@ -176,10 +200,10 @@ ul .active{
     background: #b95c5c;
     border-color: #DBD9D9;
 }
-/*test-text*/
+/*top-text-anim*/
 #animated-text {
-    font-family: 'Lobster', cursive;
-    font-size: 24pt;
+    font-family: 'Slabo 27px', serif;
+    font-size: 40px;
     text-align: center;
     color: black;
     margin-top: 5px;
@@ -188,34 +212,66 @@ ul .active{
     -webkit-animation-duration: 2s;
     -webkit-animation-delay: 2s;
 }
+#animated-row{
+    background: rgba(219, 217, 217, 0.5);
+    width:50%;
+    margin:0 auto;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+}
 #animated{
-    margin-top: 6%;
+    margin-top: 7%;
 }
-/*test*/
-#animated-first-row{
-    background: rgba(219, 217, 217, 0.5);
-    width:50%;
-    margin:0 auto;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-delay: 1s;
+/*top-text-quer*/
+@media (max-width: 669px){
+    #animated-text{
+        font-size: 30px;        
+    }
 }
-#animated-second-row{
-    background: rgba(219, 217, 217, 0.5);
-    width:50%;
-    margin:0 auto;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-delay: 1s;
+@media (max-width: 513px){
+    #animated-text{
+        font-size: 25px;        
+    }
+    #animated{
+        margin-top: 15%;
+    }
 }
-#animated-third-row{
-    background: rgba(219, 217, 217, 0.5);
-    width:50%;
-    margin:0 auto;
-    -webkit-animation-duration: 2s;
-    -webkit-animation-delay: 1s;
+@media (max-width: 325px){
+    #animated-text{
+        font-size: 20px;        
+    }    
 }
 .horizontal-style-sec{
     border-top: 2px solid #5F605B;
 }
 .page-header{
     border-bottom: 2px solid #5F605B;
+}
+/*fonts-style*/
+#headers-font, #form-header{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+#thankyou-font-style{
+    font-family: 'Slabo 27px', serif;    
+}
+.underline{
+    font-weight: 600;
+}
+/*scr-button*/
+#scr-button{
+	position: fixed;
+    right: 5px;
+    top: 20px;
+	margin-right: 1%;
+	text-align: center;
+    background: #B95C5C;
+    opacity:0.8;
+    border-radius: 5px;
+}
+#scr-button i{
+    color: #FFFFFF;
+}
+#scr-button:hover{
+    opacity:1;
 }

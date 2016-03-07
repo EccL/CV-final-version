@@ -6,7 +6,7 @@ $(document).ready(function(){
 		$target = $(target);
 		$('html, body').stop().animate({
 			'scrollTop': $target.offset().top
-		}, 900, 'swing', function () {
+		}, 1100, 'swing', function () {
 			window.location.hash = target;
 		});
 	});
@@ -18,4 +18,23 @@ $(document).on('click','.navbar-collapse.in',function(e) {
     if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
         $(this).collapse('hide');
     }
+});
+/*validation*/
+
+/*button*/
+$(document).ready(function() {
+    $("#scr-button").hide();
+	$(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 600) {
+            $('#scr-button').fadeIn();
+        } else {
+            $('#scr-button').fadeOut();
+        }
+    });
+	   $('#scr-button').click(function() {
+	   $('body').animate({scrollTop: 0}, 1000);
+	   return false;
+        });
+	});
 });
